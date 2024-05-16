@@ -24,8 +24,5 @@ public class presolv360BusinessEnquiry {
         driver.findElement(By.id("email")).sendKeys("virat@presolv360.com");
         driver.findElement(By.xpath("/html/body/div[7]/div/div/div/button")).click();
 
-
-
-
     }
 }
