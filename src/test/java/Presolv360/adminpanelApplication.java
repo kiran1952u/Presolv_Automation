@@ -1,17 +1,9 @@
-package P360;
+package Presolv360;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.annotations.IDataProviderAnnotation;
 import org.testng.annotations.Test;
-
-import java.sql.SQLOutput;
-import java.util.concurrent.TimeUnit;
 
 public class  adminpanelApplication {
 

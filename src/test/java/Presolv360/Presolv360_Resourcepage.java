@@ -1,19 +1,15 @@
-package P360;
+package Presolv360;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.apache.poi.ss.formula.functions.EDate;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
 import java.util.ArrayList;
 
-public class Resourcepage {
+public class Presolv360_Resourcepage {
     @Test
     public void Resoucepage() throws InterruptedException {
         ChromeOptions options = new ChromeOptions();
@@ -134,18 +130,17 @@ public class Resourcepage {
         JavascriptExecutor jdsd = (JavascriptExecutor) driver;
         // Scroll down by a certain pixel
         js.executeScript("window.scrollBy(0, 500)");
-
-
-
-
-
-
-
-
+        Thread.sleep(3000);
+        driver.get("https://presolv360.com/clause");
         driver.close();
+        Thread.sleep(3200);
+        driver.findElement(By.xpath("//*[@id=\"nav\"]/div[2]/div[1]/ul/li[1]/a")).click();
 
 
-        driver.quit();
+//        driver.close();
+
+
+//        driver.quit();
 
 
     }
