@@ -1,4 +1,4 @@
-package presolv;
+package com.org.test;
 
 import java.awt.Dimension;
 

@@ -1,4 +1,4 @@
-package com.org.test;
+package Presolv360;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;

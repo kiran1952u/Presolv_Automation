@@ -1,4 +1,4 @@
-package P360;
+package Presolv360;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
@@ -8,7 +8,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 @Test(dataProvider = "userData")
-public class PresolvFE {
+public class PresolvwebsiteAutomation {
     public void BusinessE(String name, String orgname, String number, String email) throws InterruptedException {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--remote-allow-origins=*");

@@ -1,13 +1,12 @@
-package P360;
+package Presolv360;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
-public class DeletearbitratorNew {
+public class LawyersDeleteFunctionality {
     @Test
     public void deletearbitrator() throws InterruptedException {
         ChromeOptions options = new ChromeOptions();
@@ -22,12 +21,15 @@ public class DeletearbitratorNew {
         driver.findElement(By.name("password")).sendKeys("{'%E/vR}$trong21");
         Thread.sleep(2000);
         driver.findElement(By.xpath("//*[@id=\"loginform\"]/div[3]/div/div/button")).click();
-        Thread.sleep(4000);
+        Thread.sleep(2000);
         driver.findElement(By.xpath("/html/body/nav/div/div[1]/ul/li[6]/span")).click();
-        driver.findElement(By.xpath("/html/body/nav/div/div[1]/ul/li[6]/ul/li[3]/a")).click();
-
+        driver.findElement(By.xpath("//*[@id=\"addnew \"]/ul/li[4]/a")).click();
+        Thread.sleep(3000);
+        driver.findElement(By.xpath("//*[@id=\"lawyerapprove\"]/tbody/tr[1]/td[7]/button")).click();
+        Thread.sleep(3000);
+        driver.findElement(By.xpath("/html/body/div[4]/div/div[10]/button[1]")).click();
+        
 
 
     }
-
 }

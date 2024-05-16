@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="RegressionTesting">
+    <test name="RegressionTesting">
+        <classes>
+            <class name="Presolv360.addarbitrator"/>
+            <class name="Presolv360.adminpanelApplication"/>
+        </classes>
+    </test>
+</suite>
