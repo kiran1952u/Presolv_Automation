@@ -38,7 +38,7 @@ public class addarbitrator {
     }
 
     @Test(dataProvider = "userData")
-    public void CreateArbitratorNew (String name , String last_name , String email ,String mobileNo ) throws InterruptedException {
+    public void CreateArbitratorNew (String name , String last_name , String email ,String mobileNo, String random_id ) throws InterruptedException {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--remote-allow-origins=*");
         WebDriverManager.chromedriver().setup();
@@ -59,6 +59,7 @@ public class addarbitrator {
         Thread.sleep(2000);
         driver.findElement(By.name("mobileNo")).sendKeys(mobileNo);
         Thread.sleep(2000);
+        driver.findElement(By.name("random_id")).sendKeys(random_id);
         driver.findElement(By.xpath("/html/body/div[2]/div/section/div/div[1]/div[2]/form/button")).click();
         Thread.sleep(3000);
         driver.quit();
@@ -68,22 +69,14 @@ public class addarbitrator {
     @DataProvider(name = "userData")
     public Object[][] userData() {
         return new Object[][]  {
+                {"Ava Rodriguez", "developer", "ava.rodriguez@example.com", "9876543393", "pass1234"},
+                {"Logan Martinez", "developer", "logan.martinez@example.com", "9876543394", "securepass"},
+                {"Charlotte Lewis", "designer", "charlotte.lewis@example.com", "9876543395", "design123"},
+                {"Mia Perez", "designer", "mia.perez@example.com", "9876543396", "graphic1"},
+                {"Benjamin Harris", "designer", "benjamin.harris@example.com", "9876543397", "password456"},
+                {"Emma Thompson", "designer", "emma.thompson@example.com", "9876543398", "webdesign123"},
+                {"William Nelson", "designer", "william.nelson@example.com", "9876543399", "uiux123"}
 
-                {"Sophie Turner", "arbitrator", "sophie.turner@gmail.com", "9876543345"},
-                {"Daniel Smith", "arbitrator", "daniel.smith@gmail.com", "9876543346"},
-                {"Ella Johnson", "arbitrator", "ella.johnson@gmail.com", "9876543347"},
-                {"Jacob Martinez", "arbitrator", "jacob.martinez@gmail.com", "9876543348"},
-                {"Avery Cooper", "arbitrator", "avery.cooper@gmail.com", "9876543349"},
-                {"Grace Thompson", "arbitrator", "grace.thompson@gmail.com", "9876543350"},
-                {"William Taylor", "arbitrator", "william.taylor@gmail.com", "9876543351"},
-                {"Emily Harris", "arbitrator", "emily.harris@gmail.com", "9876543352"},
-                {"Benjamin Wright", "arbitrator", "benjamin.wright@gmail.com", "9876543353"},
-                {"Scarlett Brown", "arbitrator", "scarlett.brown@gmail.com", "9876543354"},
-                {"Jackson Davis", "arbitrator", "jackson.davis@gmail.com", "9876543355"},
-                {"Aria Wilson", "arbitrator", "aria.wilson@gmail.com", "9876543356"},
-                {"Ethan Miller", "arbitrator", "ethan.miller@gmail.com", "9876543357"},
-                {"Natalie Thomas", "arbitrator", "natalie.thomas@gmail.com", "9876543358"},
-                {"Lucy Rodriguez", "arbitrator", "lucy.rodriguez@gmail.com", "9876543359"}
 
         };
     }
