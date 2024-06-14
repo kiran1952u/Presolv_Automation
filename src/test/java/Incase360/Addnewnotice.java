@@ -38,7 +38,7 @@ public class Addnewnotice {
         Thread.sleep(4000);
         driver.findElement(By.xpath("/html/body/div[1]/div[2]/div[2]/div/div/div[2]/form/div[3]/div/div/div/div[1]/span")).click();
         Thread.sleep(4000);
-        driver.findElement(By.xpath("/html/body/div[4]/div[1]/div/input")).sendKeys("CSB");
+        driver.findElement(By.xpath("/html/body/div[4]/div[1]/div/input")).sendKeys("KIRAN");
         Thread.sleep(4000);
         driver.findElement(By.xpath("/html/body/div[4]/div[2]/div/div/div/label/span[1]/input")).click();
         driver.findElement(By.xpath("/html/body/div[1]/div[2]/div[2]/div/div/div[2]/form/div[4]/div/div/div/div[1]/div[2]/div[1]/iframe")).sendKeys("Reference: ${notice_ID}\n" +
