@@ -16,15 +16,15 @@ public class Exsiting_notice {
         ChromeDriver driver = new ChromeDriver(options);
         driver.get("https://test.incase360.com/login");
         driver.manage().window().maximize();
-        Thread.sleep(3000);
+        Thread.sleep(1000);
         driver.findElement(By.name("userName")).sendKeys("admin@incase360.com");
         driver.findElement(By.name("userPassword")).sendKeys("1WbFG0Z84@");
-        Thread.sleep(3000);
+        Thread.sleep(1000);
         WebElement e = driver.findElement(By.id("captchaanswer"));
         System.out.println("This is the value" + e.getAttribute("innerHTML"));
         Thread.sleep(1000);
         driver.findElement(By.id("captcha")).sendKeys(e.getAttribute("innerHTML"));
-        Thread.sleep(3000);
+        Thread.sleep(1000);
         driver.findElement(By.xpath("//*[@id=\"root\"]/div[2]/section/main/div/div/div/div/div/div/div/form/div[4]/div[2]/button")).click();
         Thread.sleep(3000);
         driver.findElement(By.xpath("//*[@id=\"side-menu\"]/li[5]/a")).click();
@@ -44,6 +44,10 @@ public class Exsiting_notice {
         driver.findElement(By.xpath("//*[@id=\"layout-wrapper\"]/div[2]/div/div/div[2]/div[1]/div/div/input")).sendKeys("test2121");
         driver.findElement(By.xpath("//*[@id=\"layout-wrapper\"]/div[2]/div/div/div[2]/div[1]/div/div/button")).click();
         Thread.sleep(1000);
+        driver.findElement(By.xpath("//*[@id=\"layout-wrapper\"]/div[2]/div/div/div[2]/div[2]/div[2]/div[1]/div/div/div[8]/div/div/button[2]")).click();
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//*[@id=\"side-menu\"]/li[5]/a")).click();
+
       
 //        driver.findElement(By.xpath("/html/body/div[3]/div/div[6]/button[1]")).click();
 
